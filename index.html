@@ -4,17 +4,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#ffffff">
-  <meta name="description" content="Shop the Kefene demo collection: modern unisex wear, easy layers and everyday favourites.">
+  <meta name="description" content="Browse the Kefene demo collection: everyday T-shirts, shirts, denim, lowers, knitwear and outerwear.">
   <title>KEFENE — Modern Unisex Wear</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="topline"><span>MODERN UNISEX WEAR</span><span>INDORE · PAN-INDIA DELIVERY</span><span>DEMO STORE · NO REAL PAYMENT</span></div>
+  <div class="topline"><span>MODERN UNISEX WEAR</span><span>INDORE · PAN-INDIA DELIVERY</span><span>DEMO CATALOG · SAMPLE PRICES</span></div>
   <header class="site-header">
     <a class="brand" href="#home" aria-label="Kefene home">kefene<span>®</span></a>
     <form class="search" id="search-form" role="search">
-      <input id="search-input" type="search" placeholder="Search sweaters or colours…" aria-label="Search products">
+      <input id="search-input" type="search" placeholder="Search tees, shirts, denim…" aria-label="Search products">
       <button aria-label="Search">⌕</button>
     </form>
     <div class="header-actions">
@@ -26,29 +29,25 @@
     <section class="hero">
       <div class="hero-copy">
         <div class="eyebrow"><span class="live-dot"></span> THE KEFENE EDIT · NEW SEASON</div>
-        <h1>Wear your<br><span>own energy.</span></h1>
-        <p>Easy layers. Better fits. Pieces that feel like you from the first wear.</p>
+        <h1>Fits for<br><span>every kind of day.</span></h1>
+        <p>Easy tees, standout layers and everyday favourites from the KEFENE edit.</p>
         <a class="primary-button hero-button" href="#shop">Shop the collection <span>→</span></a>
-        <div class="hero-proof"><span>01 / EVERYDAY FAVOURITES</span><span>DESIGNED TO BE WORN ON REPEAT</span></div>
+        <div class="hero-proof"><span>SHIRTS · TEES · DENIM</span><span>LAYERS FOR EVERYDAY</span></div>
       </div>
       <div class="hero-product">
-        <div class="hero-photo"><img src="assets/kefene-sweatshirt-03.jpeg" alt="Kefene cream knit sweater on display"><span class="image-badge">THE SOFT-LAYER EDIT</span></div>
-        <div class="hero-product-tag"><span>THE ONE YOU'LL REACH FOR</span><strong>Marino Knit Sweater</strong><span>Easy feel. All-day comfort.</span></div>
+        <div class="hero-photo"><img src="assets/kefene-outerwear-arrival.jpg" alt="A dark Kefene outerwear piece shown in the brand’s October Instagram reel"><span class="image-badge">JUST ARRIVED AT KEFENE</span></div>
+        <div class="hero-product-tag"><span>THE NEW-SEASON LAYER</span><strong>Outerwear edit</strong><span>From Indore, for everywhere.</span></div>
         <span class="hero-side-note">KEFENE · MADE FOR EVERYDAY</span>
       </div>
     </section>
 
     <section class="shop" id="shop">
       <div class="shop-heading">
-        <div><div class="eyebrow">THE NEW ROTATION</div><h2>Shop the collection</h2><p>Find your fit. Pick your colour. Make it yours.</p></div>
+        <div><div class="eyebrow">THE NEW ROTATION</div><h2>Explore the catalog</h2><p>Browse by category, find your fit, and build your everyday lineup.</p><p class="catalog-disclaimer">Demo listings and sample prices are for preview only; confirm exact product details and availability with Kefene.</p></div>
       </div>
       <div class="shop-toolbar">
-        <div class="filters" role="group" aria-label="Filter products">
-          <button class="filter-chip active" data-filter="all">All pieces <span>3</span></button>
-          <button class="filter-chip" data-filter="knitwear">Knitwear</button>
-          <button class="filter-chip" data-filter="dark">Deep tones</button>
-        </div>
-        <span class="result-count" id="result-count">3 pieces</span>
+        <div class="filters" id="category-filters" role="group" aria-label="Filter products"></div>
+        <span class="result-count" id="result-count">14 pieces</span>
       </div>
       <div class="product-grid" id="product-grid" aria-live="polite"></div>
       <div class="empty-results" id="empty-results" hidden>No pieces match that search. Try another name or colour.</div>
