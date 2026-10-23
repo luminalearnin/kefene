@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f3efe7">
+<meta name="description" content="Kefene: modern unisex wear from Indore. Knitwear, shirts and jackets with pan-India delivery. Order on WhatsApp.">
+<title>kefene. — Modern Unisex Wear, Indore</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3efe7;--card:#faf8f3;--ink:#15140f;--mut:#6b675c;--line:#dcd5c5;--blue:#2438ff;--serif:'Cormorant Garamond',Georgia,serif}
+*{box-sizing:border-box}[hidden]{display:none!important}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 'DM Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}button{font:inherit;color:inherit;cursor:pointer}a{color:inherit}
+:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+.bar{background:var(--ink);color:#e9e4d8;font-size:11px;letter-spacing:.14em;text-align:center;padding:8px 12px;text-transform:uppercase}
+header{position:sticky;top:0;z-index:30;background:rgba(243,239,231,.93);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:10px 14px}
+.hl,.hr{display:flex;align-items:center;gap:4px}
+.logo{font:700 31px/1 var(--serif);text-decoration:none;letter-spacing:-.02em;padding:0 6px}.logo i{color:var(--blue);font-style:normal}
+.ib{position:relative;background:none;border:0;padding:9px;display:grid;place-items:center}
+.ib svg{width:22px;height:22px;stroke:var(--ink);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.cnt{position:absolute;top:1px;right:0;background:var(--blue);color:#fff;font-size:10px;font-weight:700;min-width:17px;height:17px;border-radius:9px;display:grid;place-items:center}
+.dn{display:none;gap:22px;font-size:13px;letter-spacing:.06em;margin-left:14px}.dn a{text-decoration:none}.dn a:hover{color:var(--blue)}
+.sr{padding:10px 14px;border-bottom:1px solid var(--line);background:var(--bg)}
+.sr input{width:100%;height:44px;border:1px solid var(--ink);background:var(--card);padding:0 14px;font:inherit}
+.eyebrow{font-size:11px;letter-spacing:.2em;color:var(--blue);font-weight:700;text-transform:uppercase}
+.hero{display:grid;gap:26px;padding:26px 16px 8px;max-width:1180px;margin:auto}
+h1{font:600 clamp(46px,13vw,96px)/.97 var(--serif);margin:14px 0 16px;letter-spacing:-.02em}h1 em{color:var(--blue);font-weight:500}
+.lead{color:var(--mut);max-width:42ch;margin:0 0 22px}
+.row{display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:48px;padding:0 24px;border:1px solid var(--ink);background:var(--ink);color:#fff;font-weight:600;font-size:14px;text-decoration:none}
+.btn.ghost{background:transparent;color:var(--ink)}.btn.blue{background:var(--blue);border-color:var(--blue);color:#fff}
+.btn:disabled{opacity:.35;cursor:not-allowed}
+.himg{position:relative;aspect-ratio:4/5;overflow:hidden;background:#d9d2c3}.himg img{width:100%;height:100%;object-fit:cover}
+.himg span{position:absolute;left:12px;bottom:12px;background:var(--bg);font-size:10px;letter-spacing:.14em;font-weight:700;padding:6px 10px;text-transform:uppercase}
+.strip{margin:26px 0 0;border-block:1px solid var(--line);padding:12px 16px;font-size:11px;letter-spacing:.14em;color:var(--mut);text-align:center;text-transform:uppercase}
+.wrap{max-width:1180px;margin:auto;padding:0 16px}
+.shop{padding:44px 0 20px}
+h2{font:600 clamp(34px,8vw,54px)/1.02 var(--serif);margin:8px 0 6px;letter-spacing:-.01em}
+.sub{color:var(--mut);margin:0 0 18px;max-width:52ch}
+.bar2{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:16px}
+.chips{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none}
+.chip{flex:none;height:38px;padding:0 16px;border:1px solid var(--ink);background:transparent;font-size:13px}.chip.on{background:var(--ink);color:#fff}
+#count{font-size:12px;color:var(--mut);white-space:nowrap}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.card{background:var(--card);border:1px solid var(--line);cursor:pointer;display:flex;flex-direction:column;text-align:left}
+.ph{position:relative;aspect-ratio:4/5;overflow:hidden;background:#e6e0d2}
+.ph img{width:100%;height:100%;object-fit:cover;transition:opacity .35s,transform .6s}.ph img.b{position:absolute;inset:0;opacity:0}
+.card:hover .ph img.b{opacity:1}.card:hover .ph img{transform:scale(1.03)}
+.tag{position:absolute;top:8px;left:8px;background:var(--bg);font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:4px 8px;font-weight:700}
+.dots{position:absolute;bottom:8px;left:50%;transform:translateX(-50%);display:flex;gap:5px}
+.dots i{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.55);display:block}.dots i.on{background:#fff}
+.ci{padding:12px;display:flex;flex-direction:column;gap:3px;flex:1}
+.cat{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut)}
+.card h3{font:600 22px/1.08 var(--serif);margin:2px 0}
+.card p{margin:0;color:var(--mut);font-size:13px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.pr{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin:8px 0 12px}.pr b{font-size:17px}.pr s{color:var(--mut);font-size:13px}.pr small{font-size:11px;color:var(--mut);flex-basis:100%}
+.ci .btn{margin-top:auto;width:100%;height:44px;font-size:13px;padding:0 10px}
+.empty{padding:40px 0;text-align:center;color:var(--mut)}
+.store{margin:34px 0 0;background:var(--card);border:1px solid var(--line);padding:26px 20px;display:grid;gap:18px}
+.facts{display:grid;gap:12px;font-size:14px}.facts b{display:block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--mut);font-weight:600}
+.cta{margin:26px 0 0;background:var(--blue);color:#fff;padding:30px 20px;display:grid;gap:12px}.cta h2{margin:0;color:#fff}.cta p{margin:0;opacity:.9}
+.cta .btn{background:#fff;color:var(--ink);border-color:#fff;justify-self:start}
+footer{margin-top:44px;background:#f7f5f2;border-top:1px solid var(--line);padding:28px 18px 22px}
+.fi{max-width:1180px;margin:auto}.fb{display:flex;align-items:center;gap:12px}
+.fm{width:44px;height:44px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;font:700 17px 'DM Sans',sans-serif}
+.fn{font-weight:700;font-size:18px;letter-spacing:.04em}.fs{font-size:9.5px;letter-spacing:.18em;color:var(--mut);text-transform:uppercase}
+.ft{margin:14px 0 24px 56px;font-size:13px;color:var(--mut)}
+.fc{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:720px}
+.fc h4{margin:0 0 10px;font-size:11.5px;letter-spacing:.2em;color:var(--blue);text-transform:uppercase}
+.fc a,.fc span{display:block;padding:7px 0;font-size:13.5px;text-decoration:none;color:#3d3b33}.fc a:hover{color:var(--blue)}
+.fl{margin-top:22px;border-top:1px solid var(--line);padding-top:14px;font-size:11px;color:var(--mut);display:grid;gap:6px}
+.sc{position:fixed;inset:0;background:rgba(21,20,15,.5);z-index:40;display:none}.sc.on{display:block}
+.dr{position:fixed;top:0;bottom:0;z-index:50;background:var(--bg);width:min(420px,100%);display:flex;flex-direction:column;transition:transform .3s}
+#bag{right:0;transform:translateX(100%)}#nav{left:0;transform:translateX(-100%);width:min(320px,86%)}.dr.open{transform:none}
+.dh{display:flex;justify-content:space-between;align-items:center;padding:16px 18px;border-bottom:1px solid var(--line)}.dh h3{margin:0;font:600 26px var(--serif)}
+.xb{background:none;border:0;font-size:28px;line-height:1;padding:4px 8px}
+.nl{display:grid;padding:10px 18px}.nl a{padding:14px 0;border-bottom:1px solid var(--line);text-decoration:none;font:600 26px var(--serif)}
+.lines{flex:1;overflow:auto;padding:6px 18px}
+.bl{display:grid;grid-template-columns:64px 1fr auto;gap:12px;padding:14px 0;border-bottom:1px solid var(--line);align-items:start}
+.bl img{width:64px;height:80px;object-fit:cover}.bl b{display:block;font-size:14px}.bl span{font-size:12px;color:var(--mut)}
+.qty{display:flex;align-items:center;gap:10px;margin-top:8px}.qty button{width:28px;height:28px;border:1px solid var(--ink);background:none}.qty i{font-style:normal;min-width:14px;text-align:center}
+.be{padding:50px 24px;text-align:center;color:var(--mut)}
+.bf{padding:16px 18px;border-top:1px solid var(--line);display:grid;gap:10px}.tot{display:flex;justify-content:space-between;font-size:17px}
+.note{font-size:12px;color:var(--mut);margin:0}
+.pm{position:fixed;inset:0;z-index:60;display:none;align-items:flex-end;justify-content:center;background:rgba(21,20,15,.55)}.pm.open{display:flex}
+.sheet{position:relative;background:var(--bg);width:100%;max-height:94vh;overflow:auto;border-radius:18px 18px 0 0}
+.acct{display:flex;align-items:center;gap:6px;padding:9px 8px}.al{font-size:13px;font-weight:600}
+.inp{width:100%;height:46px;border:1px solid var(--ink);background:var(--card);padding:0 12px;font:inherit}
+.mark{width:44px;height:44px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;font:700 22px var(--serif);margin-bottom:6px}
+.sr2{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);font-size:14px}
+.done{font-size:14px;margin-top:10px}.done a{color:var(--blue);font-weight:600}
+.x{position:absolute;top:10px;right:12px;z-index:3;width:38px;height:38px;border-radius:50%;border:0;background:var(--bg);font-size:24px;line-height:1}
+.gw{position:relative}.gal{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;aspect-ratio:1/1;background:#e6e0d2}
+.gal img{flex:0 0 100%;width:100%;height:100%;object-fit:cover;scroll-snap-align:center}.gw .dots{bottom:12px}
+.pi{padding:20px 18px 26px;display:grid;gap:6px;align-content:start}.pi h2{font-size:34px;margin:2px 0}.mut{color:var(--mut);margin:0}
+.pr.big b{font-size:24px}.pr.big em{font-style:normal;color:var(--blue);font-weight:700;font-size:13px}
+.sl{display:flex;justify-content:space-between;margin-top:12px;font-size:13px;font-weight:600}.req{color:var(--blue);font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+.sizes{display:flex;gap:8px;flex-wrap:wrap}.sizes button{min-width:54px;height:46px;border:1px solid var(--ink);background:transparent}.sizes button.on{background:var(--ink);color:#fff}
+.acts{display:grid;gap:10px;margin:14px 0 4px}.about{margin-top:14px;padding-top:14px;border-top:1px solid var(--line);font-size:14px;color:#3d3b33}
+@media(min-width:860px){
+.hero{grid-template-columns:1.1fr .9fr;align-items:center;padding-top:50px}.dn{display:flex}.mb{display:none}
+.grid{grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px}
+.store{grid-template-columns:1.2fr 1fr;padding:34px}.cta{padding:44px 40px}
+.pm{align-items:center;padding:24px}.sheet{width:min(980px,100%);border-radius:6px;display:grid;grid-template-columns:1fr 1fr;max-height:90vh}
+.pi{padding:34px 30px}.gal{aspect-ratio:4/5}.sheet.small{display:block;width:min(440px,100%)}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="bar">Modern unisex wear · Indore · Pan-India delivery · Open daily 2–10PM</div>
+<header>
+  <div class="hl">
+    <button class="ib mb" id="menu" aria-label="Open menu"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    <a class="logo" href="#top" aria-label="Kefene home">kefene<i>.</i></a>
+    <nav class="dn"><a href="#shop">Shop</a><a href="#store">Visit the store</a><a href="https://www.instagram.com/kefeneoffline/" target="_blank" rel="noopener">Instagram</a></nav>
+  </div>
+  <div class="hr">
+    <button class="ib acct" id="abtn" aria-label="Sign in"><svg viewBox="0 0 24 24" style="width:22px;height:22px;stroke:var(--ink);fill:none;stroke-width:1.6;stroke-linecap:round"><circle cx="12" cy="8" r="3.5"/><path d="M4.8 20c.5-3.7 3.2-5.6 7.2-5.6s6.7 1.9 7.2 5.6"/></svg><span class="al">Sign in</span></button>
+    <button class="ib" id="sbtn" aria-label="Search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></button>
+    <button class="ib" id="bbtn" aria-label="Open bag"><svg viewBox="0 0 24 24"><path d="M5 8h14l1 13H4L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg><span class="cnt" id="bc" hidden>0</span></button>
+  </div>
+</header>
+<div class="sr" id="sr" hidden><input id="q" type="search" placeholder="Search knitwear, shirts, jackets…" aria-label="Search products"></div>
+
+<main id="top">
+  <section class="hero">
+    <div>
+      <div class="eyebrow">Modern unisex wear · Indore</div>
+      <h1>A little more style in <em>your everyday.</em></h1>
+      <p class="lead">Soft knits, easy layers and shirts with a story. Straight from the Kefene store in Indore, delivered across India.</p>
+      <div class="row"><a class="btn" href="#shop">Shop the edit →</a><a class="btn ghost" href="#store">Visit the store</a></div>
+    </div>
+    <div class="himg"><img src="assets/kefene-brown-polo-model.jpg" alt="Kefene brown layered knit shirt with check trim, styled with black denim"><span>Just in · Layered knit</span></div>
+  </section>
+  <div class="strip">Real pieces from the Kefene store · Tap a piece to pick your size · Pan-India delivery</div>
+
+  <section class="wrap shop" id="shop">
+    <div class="eyebrow">The Kefene edit</div>
+    <h2>Shop the collection</h2>
+    <p class="sub">Tap any piece to see it up close, choose your size and add it to your bag.</p>
+    <div class="bar2"><div class="chips" id="chips"></div><span id="count"></span></div>
+    <div class="grid" id="grid"></div>
+    <div class="empty" id="empty" hidden>No pieces match that search. Try another name or colour.</div>
+
+    <div class="store" id="store">
+      <div>
+        <div class="eyebrow">Our store · Indore</div>
+        <h2>Local roots. Everyday fits.</h2>
+        <p class="sub" style="margin:0">Come try the pieces in person, or message us and we’ll help with size, price and delivery.</p>
+      </div>
+      <div class="facts">
+        <div><b>Find us</b>Behind C21 Mall, Indore</div>
+        <div><b>Open</b>Daily, 2–10PM</div>
+        <div class="row"><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Kefene+C21+Mall+Indore" target="_blank" rel="noopener">Find the store</a><a class="btn ghost" href="https://www.instagram.com/kefeneoffline/" target="_blank" rel="noopener">Instagram</a></div>
+      </div>
+    </div>
+    <div class="cta">
+      <div class="eyebrow" style="color:#fff;opacity:.8">Need a size, price or delivery detail?</div>
+      <h2>Talk to the store.</h2>
+      <p>Send a quick WhatsApp message and we’ll confirm the details before you order.</p>
+      <a class="btn" href="https://wa.me/918770475200" target="_blank" rel="noopener">WhatsApp +91 87704 75200</a>
+    </div>
+  </section>
+</main>
+
+<footer><div class="fi">
+  <div class="fb"><div class="fm">K</div><div><div class="fn">KEFENE</div><div class="fs">Modern unisex wear · Indore</div></div></div>
+  <p class="ft">Modern unisex wear from Indore, India.</p>
+  <div class="fc">
+    <div><h4>Shop</h4><a href="#shop" data-cat="Knitwear">Knitwear</a><a href="#shop" data-cat="Shirts">Shirts</a><a href="#shop" data-cat="Jackets">Jackets</a><a href="#shop" data-cat="All">All pieces</a></div>
+    <div><h4>Find us</h4><span>Behind C21 Mall, Indore</span><span>Daily, 2–10PM</span><a href="tel:+918770475200">+91 87704 75200</a><a href="mailto:info@kefene.com">info@kefene.com</a><a href="https://www.instagram.com/kefeneoffline/" target="_blank" rel="noopener">Instagram ↗</a></div>
+  </div>
+  <div class="fl"><span>© 2026 KEFENE</span><span>Preview prices · no online payment collected</span></div>
+</div></footer>
+
+<div class="sc" id="sc"></div>
+<aside class="dr" id="nav" aria-label="Menu"><div class="dh"><h3>Menu</h3><button class="xb" data-close aria-label="Close menu">×</button></div>
+  <nav class="nl"><a href="#shop" data-close>Shop all</a><a href="#shop" data-cat="Knitwear" data-close>Knitwear</a><a href="#shop" data-cat="Shirts" data-close>Shirts</a><a href="#shop" data-cat="Jackets" data-close>Jackets</a><a href="#store" data-close>Visit the store</a></nav></aside>
+<aside class="dr" id="bag" aria-label="Shopping bag"><div class="dh"><h3>Your bag (<span id="bn">0</span>)</h3><button class="xb" data-close aria-label="Close bag">×</button></div>
+  <div class="lines" id="lines"></div>
+  <div class="be" id="be"><p>Your bag is empty.</p><button class="btn" data-close>Keep shopping</button></div>
+  <div class="bf" id="bf" hidden><div class="tot"><span>Total</span><strong id="bt">₹0</strong></div><button class="btn blue" id="cko">Buy now →</button></div></aside>
+<div class="pm" id="pm"><section class="sheet" id="sheet" role="dialog" aria-modal="true" aria-label="Product details"></section></div>
+
+<div class="pm" id="am"><section class="sheet small" role="dialog" aria-modal="true" aria-labelledby="at">
+  <button class="x" data-close aria-label="Close sign in">×</button>
+  <div class="pi"><div class="mark">k</div><div class="eyebrow">Good to have you here</div><h2 id="at">Sign in to Kefene</h2><p class="mut">Enter your email to continue.</p>
+  <form id="sf"><label class="sl" for="se" style="display:block;margin-bottom:6px">Email address</label><input class="inp" id="se" type="email" placeholder="you@example.com" required><button class="btn blue" style="width:100%;margin-top:12px">Continue →</button></form>
+  <p class="done" id="sm" role="status"></p></div></section></div>
+<div class="pm" id="co"><section class="sheet small" role="dialog" aria-modal="true" aria-labelledby="ct">
+  <button class="x" data-close aria-label="Close checkout">×</button>
+  <div class="pi"><div class="eyebrow">One last look</div><h2 id="ct">Your order</h2><div id="cs"></div>
+  <div class="tot" style="margin:14px 0"><span>Total</span><strong id="cto">₹0</strong></div>
+  <button class="btn blue" id="place" style="width:100%">Place order →</button><div class="done" id="cm" role="status"></div></div></section></div>
+
+<script>
+const WA='918770475200';
+const P=[
+{id:'marino-cream',n:'Marino Knit Sweater',c:'Knitwear',col:'Classic Cream',img:['assets/kefene-sweatshirt-01.jpeg','assets/kefene-sweatshirt-03.jpeg'],p:1999,m:2499,s:['S','M','L','XL'],d:'A soft, neutral ribbed layer for repeat-wear styling. Shown front and back.',tag:'Marino edit',real:1},
+{id:'marino-maroon',n:'Marino Knit Sweater',c:'Knitwear',col:'Maroon',img:['assets/kefene-sweatshirt-02.jpeg'],p:1999,m:2499,s:['S','M','L','XL'],d:'A rich maroon colourway for a simple layered look.',tag:'Marino edit',real:1},
+{id:'check-trim-knit',n:'Check-Trim Layered Knit',c:'Knitwear',col:'Mocha Brown',img:['assets/kefene-brown-polo-model.jpg','assets/kefene-brown-polo-folded.jpg'],p:1799,m:1799,s:['S','M','L','XL'],d:'A textured knit with a check collar and cuff detail that gives a layered look in one piece.',tag:'Just in',real:0},
+{id:'grey-overshirt-jacket',n:'Boxy Overshirt Jacket',c:'Jackets',col:'Slate Grey',img:['assets/kefene-grey-jacket.jpg'],p:2799,m:2799,s:['M','L','XL'],d:'A structured boxy layer with contrast stitching and metal buttons. Easy over a tee or shirt.',tag:'Just in',real:0},
+{id:'white-gold-button-shirt',n:'Gold-Button Poplin Shirt',c:'Shirts',col:'Crisp White',img:['assets/kefene-white-shirt.jpg'],p:1599,m:1599,s:['S','M','L','XL'],d:'A clean white shirt with statement gold buttons and a relaxed cuff.',tag:'From the store',real:0},
+{id:'cream-tassel-shirt',n:'Tassel Scarf Shirt',c:'Shirts',col:'Soft Cream',img:['assets/kefene-fringe-shirt.jpg'],p:1699,m:1699,s:['S','M','L','XL'],d:'A relaxed cream shirt with a tasselled scarf detail. Light, textured and different.',tag:'New',real:0},
+{id:'dalmatian-print-shirt',n:'Dalmatian Print Shirt',c:'Shirts',col:'Off-White',img:['assets/kefene-print-shirt.jpg'],p:1499,m:1499,s:['S','M','L','XL'],d:'An easy off-white shirt with a hand-drawn dalmatian graphic on the chest.',tag:'New',real:0}
+];
+const $=s=>document.querySelector(s);
+const money=n=>'₹'+n.toLocaleString('en-IN');
+const wa=t=>window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(t),'_blank','noopener');
+const find=id=>P.find(p=>p.id===id);
+let cat='All',q='',cur=null,sz=null,bag=[];
+try{bag=(JSON.parse(localStorage.getItem('kefene-bag'))||[]).filter(l=>find(l.id))}catch(e){}
+
+function chips(){const cs=['All',...new Set(P.map(p=>p.c))];$('#chips').innerHTML=cs.map(c=>`<button class="chip${c===cat?' on':''}" data-c="${c}">${c}</button>`).join('')}
+function card(p){
+  const dots=p.img.length>1?`<span class="dots">${p.img.map((_,i)=>`<i class="${i?'':'on'}"></i>`).join('')}</span>`:'';
+  const b=p.img[1]?`<img class="b" src="${p.img[1]}" alt="" loading="lazy">`:'';
+  return `<article class="card" data-id="${p.id}"><div class="ph"><img src="${p.img[0]}" alt="${p.n} in ${p.col}" loading="lazy">${b}<span class="tag">${p.tag}</span>${dots}</div>
+  <div class="ci"><div class="cat">${p.c} · ${p.col}</div><h3>${p.n}</h3><p>${p.d}</p>
+  <div class="pr"><b>${money(p.p)}</b>${p.m>p.p?`<s>${money(p.m)}</s>`:''}${p.real?'':'<small>Preview price</small>'}</div>
+  <button class="btn ghost" type="button">Choose size &amp; shop</button></div></article>`}
+function grid(){
+  const t=q.trim().toLowerCase();
+  const l=P.filter(p=>(cat==='All'||p.c===cat)&&[p.n,p.c,p.col,p.d].join(' ').toLowerCase().includes(t));
+  $('#count').textContent=l.length+(l.length===1?' piece':' pieces');
+  $('#empty').hidden=l.length>0;$('#grid').innerHTML=l.map(card).join('');
+}
+
+function show(el){closeAll();el.classList.add('open');$('#sc').classList.add('on');document.body.style.overflow='hidden'}
+function closeAll(){['#pm','#am','#co','#bag','#nav'].forEach(s=>$(s).classList.remove('open'));$('#sc').classList.remove('on');document.body.style.overflow=''}
+
+function openP(id){
+  cur=find(id);sz=null;const p=cur,off=p.m>p.p?Math.round((1-p.p/p.m)*100):0;
+  $('#sheet').innerHTML=`<button class="x" data-x aria-label="Close">×</button>
+  <div class="gw"><div class="gal" id="gal">${p.img.map(s=>`<img src="${s}" alt="${p.n} in ${p.col}">`).join('')}</div>${p.img.length>1?`<div class="dots" id="gd">${p.img.map((_,i)=>`<i class="${i?'':'on'}"></i>`).join('')}</div>`:''}</div>
+  <div class="pi"><div class="cat">${p.c} · Sizes in store</div><h2>${p.n}</h2><p class="mut">Colour: ${p.col}</p>
+  <div class="pr big"><b>${money(p.p)}</b>${off?`<s>${money(p.m)}</s><em>${off}% off</em>`:''}</div>
+  ${p.real?'':'<p class="note">Preview price. Final price is confirmed by the store.</p>'}
+  <div class="sl"><span>Select size</span><span class="req" id="req">Required</span></div>
+  <div class="sizes" id="sizes">${p.s.map(s=>`<button type="button" data-s="${s}">${s}</button>`).join('')}</div>
+  <div class="acts"><button class="btn ghost" id="add" disabled>Add to bag</button><button class="btn blue" id="buy" disabled>Buy now →</button></div>
+  <p class="note">Pan-India delivery · Store behind C21 Mall, Indore, daily 2–10PM.</p>
+  <div class="about"><b>About this piece</b><br>${p.d}</div></div>`;
+  show($('#pm'));
+  const g=$('#gal'),d=$('#gd');
+  if(d)g.addEventListener('scroll',()=>{const i=Math.round(g.scrollLeft/g.clientWidth);[...d.children].forEach((x,k)=>x.classList.toggle('on',k===i))});
+}
+
+function save(){try{localStorage.setItem('kefene-bag',JSON.stringify(bag))}catch(e){}drawBag()}
+function addBag(id,size){const l=bag.find(x=>x.id===id&&x.size===size);l?l.qty++:bag.push({id,size,qty:1});save()}
+function drawBag(){
+  const n=bag.reduce((a,l)=>a+l.qty,0);
+  $('#bc').textContent=n;$('#bc').hidden=!n;$('#bn').textContent=n;$('#be').hidden=n>0;$('#bf').hidden=!n;
+  $('#lines').innerHTML=bag.map((l,i)=>{const p=find(l.id);return `<div class="bl"><img src="${p.img[0]}" alt=""><div><b>${p.n}</b><span>${p.col} · Size ${l.size}</span><div class="qty"><button data-q="${i}" data-d="-1" aria-label="Fewer">−</button><i>${l.qty}</i><button data-q="${i}" data-d="1" aria-label="More">+</button></div></div><strong>${money(p.p*l.qty)}</strong></div>`}).join('');
+  $('#bt').textContent=money(bag.reduce((a,l)=>a+find(l.id).p*l.qty,0));
+}
+
+$('#grid').addEventListener('click',e=>{const c=e.target.closest('.card');if(c)openP(c.dataset.id)});
+$('#chips').addEventListener('click',e=>{const b=e.target.closest('[data-c]');if(!b)return;cat=b.dataset.c;chips();grid()});
+$('#sheet').addEventListener('click',e=>{
+  if(e.target.closest('[data-x]'))return closeAll();
+  const b=e.target.closest('[data-s]');
+  if(b){sz=b.dataset.s;[...$('#sizes').children].forEach(x=>x.classList.toggle('on',x===b));$('#req').textContent='Selected: '+sz;$('#add').disabled=$('#buy').disabled=false;return}
+  if(e.target.id==='add'){addBag(cur.id,sz);const a=e.target;a.textContent='Added ✓';setTimeout(()=>{a.textContent='Add to bag'},1000)}
+  if(e.target.id==='buy')showCheckout([{id:cur.id,size:sz,qty:1}]);
+});
+['pm','am','co'].forEach(id=>$('#'+id).addEventListener('click',e=>{if(e.target.id===id)closeAll()}));
+$('#lines').addEventListener('click',e=>{const b=e.target.closest('[data-q]');if(!b)return;const i=+b.dataset.q;bag[i].qty+=+b.dataset.d;if(bag[i].qty<=0)bag.splice(i,1);save()});
+$('#cko').onclick=()=>showCheckout(bag.map(x=>({...x})));
+$('#bbtn').onclick=()=>show($('#bag'));$('#menu').onclick=()=>show($('#nav'));
+$('#sbtn').onclick=()=>{const s=$('#sr');s.hidden=!s.hidden;if(!s.hidden)$('#q').focus()};
+$('#q').addEventListener('input',e=>{q=e.target.value;grid();if(q)$('#shop').scrollIntoView()});
+$('#sc').onclick=closeAll;
+document.querySelectorAll('[data-close]').forEach(b=>b.addEventListener('click',closeAll));
+document.querySelectorAll('[data-cat]').forEach(a=>a.addEventListener('click',()=>{cat=a.dataset.cat;chips();grid()}));
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeAll()});
+let lines=[];
+function showCheckout(l){
+  lines=l;$('#cs').innerHTML=l.map(x=>{const p=find(x.id);return `<div class="sr2"><span>${p.n} · ${p.col} · ${x.size} × ${x.qty}</span><span>${money(p.p*x.qty)}</span></div>`}).join('');
+  $('#cto').textContent=money(l.reduce((a,x)=>a+find(x.id).p*x.qty,0));
+  $('#cm').innerHTML='';$('#place').hidden=false;show($('#co'));
+}
+$('#place').onclick=()=>{
+  const L=lines.map((x,i)=>{const p=find(x.id);return `${i+1}. ${p.n} (${p.col}) · Size ${x.size} × ${x.qty} – ${money(p.p*x.qty)}`});
+  const link='https://wa.me/'+WA+'?text='+encodeURIComponent(`Hi Kefene! I’d like to order:\n${L.join('\n')}\nTotal: ${$('#cto').textContent}`);
+  $('#place').hidden=true;
+  $('#cm').innerHTML=`Thanks! Online payment isn’t open yet, so the store confirms orders directly. <a href="${link}" target="_blank" rel="noopener">Message the store to confirm →</a>`;
+};
+$('#abtn').onclick=()=>{$('#sm').textContent='';show($('#am'))};
+$('#sf').addEventListener('submit',e=>{e.preventDefault();$('#sm').textContent='Thanks! Sign-in is coming soon.';e.target.reset()});
+chips();grid();drawBag();
+</script>
+</body>
+</html>
